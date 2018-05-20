@@ -12,6 +12,6 @@ class EmailParser
   def parse
     list = []
     email_list.split(/\s|,/)
-
+    
   end
 end
