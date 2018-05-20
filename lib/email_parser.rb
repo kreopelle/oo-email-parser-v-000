@@ -13,8 +13,8 @@ class EmailParser
     list = []
     email_list.split(/\s|,/)
     email_list.select do |email|
-      list << email if email.include?(@) && !list.include?(email) 
+      list << email if email.include?("@") && !list.include?(email)
     end
     list
-  end 
+  end
 end
