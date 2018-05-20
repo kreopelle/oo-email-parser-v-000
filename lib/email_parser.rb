@@ -11,12 +11,10 @@ class EmailParser
 
   def parse
     final_list = []
-    email_list.split(/(\s|,)/)
-    email_list.select do |email|
-      if email != " " || email != ","
+    email_list.split(/[\s|,]/)
+    email_list.delete do
         final_list << email
-      end 
-    end 
+      end
+    end
     final_list
-  end 
-  
+  end
