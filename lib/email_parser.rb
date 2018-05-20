@@ -10,8 +10,8 @@ class EmailParser
   end
 
   def parse
-
-  end  
+    @email_list.split 
+  end
 
   def self.new_from_string(string)
     email_array = string.split(",")
