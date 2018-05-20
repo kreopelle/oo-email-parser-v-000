@@ -12,11 +12,4 @@ class EmailParser
   def parse
     email_list.split(/(\s|,)/)
   end
-
-  def self.new_from_string(string)
-    email_array = string.split(",")
-    email_array.each do |email|
-      email = self.new
-    end
-  end
 end
