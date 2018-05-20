@@ -7,8 +7,11 @@ class EmailParser
 
   def initialize(email_list)
     @email_list = email_list
-  end 
-  
+  end
+
+  def parse
+
+  end  
 
   def self.new_from_string(string)
     email_array = string.split(",")
