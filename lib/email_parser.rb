@@ -12,6 +12,7 @@ class EmailParser
   def parse
     list = []
     email_list.split(/\s|,/)
-    
+    email_list.select do |email|
+      list << email if email.include?(@) && !list.include?(email) 
   end
 end
