@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    @email_list.split 
+    email_list.split(/(\s|,)/)
   end
 
   def self.new_from_string(string)
