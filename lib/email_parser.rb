@@ -10,6 +10,9 @@ class EmailParser
   end
 
   def parse
+    final_list = []
     email_list.split(/(\s|,)/)
-  end
-end
+    email_list.select do |email|
+      if email != " " || email != ","
+        
+        
