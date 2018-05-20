@@ -10,11 +10,5 @@ class EmailParser
   end
 
   def parse
-    final_list = []
     email_list.split(/[\s|,]/)
-    email_list.delete do
-        final_list << email
-      end
-    end
-    final_list
   end
